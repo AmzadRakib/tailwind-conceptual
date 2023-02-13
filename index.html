@@ -5,11 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alice Production</title>
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- tialwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom tailwind css  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        bebas: ["Bebas Neue", "cursive"],
+                        montserrat: ["Montserrat", "sens-serif"],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- font-family: 'Bebas Neue', cursive;
+font-family: 'Montserrat', sans-serif;  -->
 </head>
 
 <body>
-
+    <!-- Header section  -->
+    <header>
+        <nav class="text-2xl lg:text-3xl flex justify-between items-center px-4 lg:px-52 font-bebas py-5 lg:py-8 ">
+            <h1>Alice In BorderLand</h1>
+            <ul class="flex gap-x-2 lg:gap-x-6 text-lg">
+                <li>About Us</li>
+                <li>Our Movies</li>
+                <li>Services</li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header Section End  -->
 </body>
 
 </html>
