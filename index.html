@@ -18,6 +18,12 @@
         tailwind.config = {
             theme: {
                 extend: {
+                    backgroundImage: {
+                        'banner': "url('./images/banner.jpg')",
+                    },
+                    colors: {
+                        deepyellow: "#FECC02",
+                    },
                     fontFamily: {
                         bebas: ["Bebas Neue", "cursive"],
                         montserrat: ["Montserrat", "sens-serif"],
@@ -34,7 +40,8 @@ font-family: 'Montserrat', sans-serif;  -->
 <body>
     <!-- Header section  -->
     <header>
-        <nav class="text-2xl lg:text-3xl flex justify-between items-center px-4 lg:px-52 font-bebas py-5 lg:py-8 ">
+        <nav
+            class="text-2xl lg:text-3xl flex justify-between items-center bg-white px-4 lg:px-52 font-bebas py-5 lg:py-8 absolute w-full">
             <h1>Alice In BorderLand</h1>
             <ul class="flex gap-x-2 lg:gap-x-6 text-lg">
                 <li>About Us</li>
@@ -44,6 +51,23 @@ font-family: 'Montserrat', sans-serif;  -->
         </nav>
     </header>
     <!-- Header Section End  -->
+    <!-- Main Section Start  -->
+    <main>
+        <!-- Banner Section Start  -->
+        <section class="bg-banner bg-cover bg-center h-screen pt-28 flex items-center">
+            <div class="font-bebas mx-4 lg:ml-20 text-white w-[560px]">
+                <p class="uppercase text-2xl">Movie production studio</p>
+                <h1 class="uppercase text-7xl"><span>Films MAde to</span><br><span
+                        class="text-deepyellow">Perfection</span></h1>
+                <p class="font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+                    luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <button
+                    class="text-lg mt-5 px-5 py-2 text-white hover:bg-deepyellow hover:text-black hover:border-deepyellow rounded-lg border hover:bg-yellow">Discover
+                    Now</button>
+            </div>
+        </section>
+        <!-- Banner Section End  -->
+    </main>
 </body>
 
 </html>
